@@ -1,0 +1,2 @@
+# WidgetMusicPlayer
+Qt Widget Player
