@@ -20,5 +20,5 @@ return ui->plainTextEditHeader->toPlainText();
 
 QString OnlineCfgWnd::getGroup()
 {
-    return ui->plainTextEditGroup->placeholderText();
+    return ui->plainTextEditGroup->toPlainText();
 }

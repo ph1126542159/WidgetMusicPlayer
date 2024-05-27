@@ -23,6 +23,8 @@ Q_SIGNALS:
     void playRande();
     void playingChanged(bool isPlaying);
     void updateImage(const QString&);
+    void positionChanged(int pos);
+    void updateGeciModel(const QList<QSharedPointer<LyricLine>> &lyrics);
 public Q_SLOTS:
     void playSound(QSharedPointer<SoundBaseInfo>& ptr);
     void soundValueChanged(int);

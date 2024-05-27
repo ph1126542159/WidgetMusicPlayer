@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(ui->btnWndObj,&btnWnd::playNext,ui->listWndObj,&listWnd::playNext);
     QObject::connect(ui->btnWndObj,&btnWnd::playingChanged,ui->imageWnd,&imgWnd::playingChanged);
     QObject::connect(ui->btnWndObj,&btnWnd::updateImage,ui->imageWnd,&imgWnd::reLoadPixmap);
+    QObject::connect(ui->btnWndObj,&btnWnd::positionChanged,ui->geciWndObj,&geciWnd::positionChanged);
+    QObject::connect(ui->btnWndObj,&btnWnd::updateGeciModel,ui->geciWndObj,&geciWnd::updateGeciModel);
 }
 
 MainWindow::~MainWindow()

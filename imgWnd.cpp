@@ -1,4 +1,4 @@
-#include "imgWnd.h"
+﻿#include "imgWnd.h"
 #include "ui_imgWnd.h"
 #include <QPainter>
 #include <QPainterPath>

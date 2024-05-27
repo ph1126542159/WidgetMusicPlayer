@@ -88,6 +88,7 @@ listWnd::listWnd(QWidget *parent) :
         OnlineCfgWnd cfg;
         int result =cfg.exec();
         if (result == QDialog::Rejected) return;
+        qDebug()<<cfg.getGroup();
         _downCtrl.addpendNew(cfg.getHttpHeader(),cfg.getGroup());
     });
 }

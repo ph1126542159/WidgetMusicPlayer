@@ -1,4 +1,4 @@
-#include "downloaderCtrl.h"
+﻿#include "downloaderCtrl.h"
 #include <atomic>
 #include <QQueue>
 #include <mutex>
@@ -17,6 +17,8 @@
 #include <QPixmap>
 #include "btnWnd.h"
 #include <QDebug>
+
+
 bool downloadFile(const QString &urlStr, QByteArray& bt) {
     QNetworkAccessManager manager;
     QUrl url(urlStr);
@@ -74,7 +76,17 @@ void DownLoaderHttpThread::append(const QStringList &header)
     std::unique_lock<std::mutex> lock(_ptrivate->_mtx);
     _ptrivate->_listDown.enqueue(header);
 }
-void  parseLyrics(QList<LyricLine>& list,const QString& lyrics) {
+int getMilliseconds(const QString& timeString){
+    QStringList parts = timeString.split(":");
+    int minutes = parts[0].toInt();
+    int seconds = parts[1].section('.', 0, 0).toInt();
+    int milliseconds = parts[1].section('.', 1, 1).toInt();
+
+    // 转换为毫秒
+    int totalTime = minutes * 60 * 1000 + seconds * 1000 + milliseconds;
+    return totalTime;
+}
+void  parseLyrics(QList<QSharedPointer<LyricLine>>& list,const QString& lyrics) {
     QStringList lines = lyrics.split("\\r\\n");
     list.clear();
     for (int i = 0; i < lines.size(); i++) {
@@ -83,10 +95,10 @@ void  parseLyrics(QList<LyricLine>& list,const QString& lyrics) {
         if (parts.length() >= 2) {
             QString timeStr = parts.first().mid(1); // 去掉左括号
             QString text = parts.last().trimmed();
-            qint64 time = QTime::fromString(timeStr, "mm:ss.zzz").msecsSinceStartOfDay();
-            LyricLine lyricLine;
-            lyricLine.time = time;
-            lyricLine.text = text;
+            int time = getMilliseconds(timeStr);
+            QSharedPointer<LyricLine> lyricLine(new LyricLine());
+            lyricLine->time = time;
+            lyricLine->text = text;
             list.append(lyricLine);
         }
     }
@@ -109,6 +121,7 @@ void DownLoaderHttpThread::run()
         }
         QByteArray bt;
         downloadFile(strHeader[0]+"/"+strHeader[1]+"/music.json",bt);
+
         QJsonObject listObj=byteArrayToJsonObject(bt);
         if(listObj.isEmpty()) continue;
 
@@ -117,20 +130,47 @@ void DownLoaderHttpThread::run()
         foreach(auto it,arr){
             QJsonObject obj=it.toObject();
             QSharedPointer<SoundBaseInfo> ptrData(new SoundBaseInfo());
-            ptrData->url=strHeader[0]+obj["path"].toString()+"/"+obj["mp3"].toString();
+
             ptrData->author=obj["albumName"].toString();
             ptrData->name=obj["musicName"].toString();
-            ptrData->totalNum=obj["duration"].toInt();
+            ptrData->totalNum=obj["duration"].toInt()*1000;
             ptrData->timesetr=btnWnd::millisecondsToString( ptrData->totalNum*1000);
 
+            QString dirPath="./temp"+obj["path"].toString();
+            QDir dir;
+            dir.mkpath(dirPath);
+
+            QString musicStr=strHeader[0]+obj["path"].toString()+"/"+obj["mp3"].toString();
+            if(downloadFile(musicStr,bt)){
+                QString filePath =dirPath+ "/"+obj["mp3"].toString();
+
+                QFile file(filePath);
+                file.remove();
+
+
+                if (file.open(QIODevice::WriteOnly)) {
+                    file.write(bt);
+                    file.close();
+                    ptrData->url=filePath;
+                }else{
+                    qDebug()<<file.errorString();
+                    continue;
+                }
+            }
             QString imgStr=strHeader[0]+obj["path"].toString()+"/"+obj["img"].toString();
             if(downloadFile(imgStr,bt)){
-                QString filePath = QDir::tempPath() +obj["path"].toString()+ "/"+obj["img"].toString();
+                QString filePath =dirPath+ "/"+obj["img"].toString();
+
                 QFile file(filePath);
+                file.remove();
+
+
                 if (file.open(QIODevice::WriteOnly)) {
                     file.write(bt);
                     file.close();
                     ptrData->imgUrl=filePath;
+                }else{
+                    qDebug()<<file.errorString();
                 }
             }
             QString geciStr=strHeader[0]+obj["path"].toString()+"/"+obj["lyric"].toString();
