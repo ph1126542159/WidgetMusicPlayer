@@ -113,6 +113,12 @@ listWnd::listWnd(QWidget* parent) :
         qDebug() << cfg.getGroup();
         _downCtrl.addpendNew(cfg.getHttpHeader(), cfg.getGroup());
         });
+    QObject::connect(ui->tableView,&QTableView::doubleClicked, [=](const QModelIndex& index) {
+        _currRow = index.row();
+        QStandardItem* item = _ptrModel->itemFromIndex(index);
+        QSharedPointer<SoundBaseInfo> ptr = item->data().value<QSharedPointer<SoundBaseInfo>>();
+        Q_EMIT playSound(ptr);
+        });
 }
 void listWnd::appendNew(QSharedPointer<SoundBaseInfo> ptrData)
 {
