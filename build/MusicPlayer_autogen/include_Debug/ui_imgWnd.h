@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'imgWnd.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -22,7 +22,7 @@ public:
     void setupUi(QWidget *imgWnd)
     {
         if (imgWnd->objectName().isEmpty())
-            imgWnd->setObjectName(QString::fromUtf8("imgWnd"));
+            imgWnd->setObjectName("imgWnd");
         imgWnd->resize(400, 300);
 
         retranslateUi(imgWnd);

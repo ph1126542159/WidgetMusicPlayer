@@ -1,4 +1,4 @@
-C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer.dir
-C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/INSTALL.dir
-C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer.dir
+C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/INSTALL.dir
+C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/ZERO_CHECK.dir

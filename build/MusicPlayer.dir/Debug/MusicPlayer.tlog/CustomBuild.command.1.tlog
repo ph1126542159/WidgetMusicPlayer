@@ -1,6 +1,6 @@
-^C:\USERS\18915\DESKTOP\WIDGETMUSICPLAYER\BUILD\CMAKEFILES\5208D7874210AC5F4EE40C4876D7785C\AUTOUIC_(CONFIG).STAMP.RULE
+^C:\USERS\PH\DESKTOP\WIDGETMUSICPLAYER\BUILD\CMAKEFILES\3FE06FDB1A668176280EC5CB26CEAE5B\AUTOUIC_(CONFIG).STAMP.RULE
 setlocal
-cd C:\Users\18915\Desktop\WidgetMusicPlayer\build
+cd C:\Users\ph\Desktop\WidgetMusicPlayer\build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -10,19 +10,19 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\18915\DESKTOP\WIDGETMUSICPLAYER\BUILD\CMAKEFILES\47970A33D493ACA0F463CEB97DE2CFDA\QRC_IMAGES.CPP.RULE
+^C:\USERS\PH\DESKTOP\WIDGETMUSICPLAYER\BUILD\CMAKEFILES\33F86EAE279D79279E3201D0BD57756E\QRC_IMAGES.CPP.RULE
 setlocal
-cd C:\Users\18915\Desktop\WidgetMusicPlayer\build
+cd C:\Users\ph\Desktop\WidgetMusicPlayer\build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\Strawberry\c\bin\cmake.exe -E cmake_autorcc C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json Debug
 if %errorlevel% neq 0 goto :cmEnd
-C:\Strawberry\c\bin\cmake.exe -E cmake_autorcc C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json Release
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json Release
 if %errorlevel% neq 0 goto :cmEnd
-C:\Strawberry\c\bin\cmake.exe -E cmake_autorcc C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
-C:\Strawberry\c\bin\cmake.exe -E cmake_autorcc C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -30,9 +30,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\18915\DESKTOP\WIDGETMUSICPLAYER\CMAKELISTS.TXT
+^C:\USERS\PH\DESKTOP\WIDGETMUSICPLAYER\CMAKELISTS.TXT
 setlocal
-C:\Strawberry\c\bin\cmake.exe -SC:/Users/18915/Desktop/WidgetMusicPlayer -BC:/Users/18915/Desktop/WidgetMusicPlayer/build --check-stamp-file C:/Users/18915/Desktop/WidgetMusicPlayer/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ph/Desktop/WidgetMusicPlayer -BC:/Users/ph/Desktop/WidgetMusicPlayer/build --check-stamp-file C:/Users/ph/Desktop/WidgetMusicPlayer/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

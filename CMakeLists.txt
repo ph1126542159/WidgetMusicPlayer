@@ -17,6 +17,13 @@ set(PROJECT_SOURCES
         MainWindow.cpp
         MainWindow.h
         MainWindow.ui
+        btnWnd.cpp btnWnd.h btnWnd.ui geciWnd.cpp geciWnd.h geciWnd.ui images.qrc
+        imgWnd.h imgWnd.cpp imgWnd.ui
+        listWnd.h listWnd.cpp listWnd.ui
+        DataItemDef.h
+        downloaderCtrl.cpp downloaderCtrl.h
+        OnlineCfgWnd.h OnlineCfgWnd.cpp OnlineCfgWnd.ui
+        acss_globals.h   QtAdvancedStylesheet.cpp QtAdvancedStylesheet.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -38,13 +45,6 @@ else()
     else()
         add_executable(MusicPlayer
             ${PROJECT_SOURCES}
-            btnWnd.cpp btnWnd.h btnWnd.ui geciWnd.cpp geciWnd.h geciWnd.ui images.qrc
-            imgWnd.h imgWnd.cpp imgWnd.ui
-            listWnd.h listWnd.cpp listWnd.ui
-            DataItemDef.h
-            downloaderCtrl.cpp downloaderCtrl.h
-            OnlineCfgWnd.h OnlineCfgWnd.cpp OnlineCfgWnd.ui
-            acss_globals.h   QtAdvancedStylesheet.cpp QtAdvancedStylesheet.h
         )
     endif()
 endif()

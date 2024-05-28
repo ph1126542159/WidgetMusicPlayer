@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'btnWnd.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -33,9 +33,9 @@ public:
     void setupUi(QWidget *btnWnd)
     {
         if (btnWnd->objectName().isEmpty())
-            btnWnd->setObjectName(QString::fromUtf8("btnWnd"));
+            btnWnd->setObjectName("btnWnd");
         btnWnd->resize(1235, 68);
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(btnWnd->sizePolicy().hasHeightForWidth());
@@ -45,10 +45,10 @@ public:
         btnWnd->setStyleSheet(QString::fromUtf8(""));
         horizontalLayout = new QHBoxLayout(btnWnd);
         horizontalLayout->setSpacing(9);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName("horizontalLayout");
         btnLast = new QPushButton(btnWnd);
-        btnLast->setObjectName(QString::fromUtf8("btnLast"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        btnLast->setObjectName("btnLast");
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(btnLast->sizePolicy().hasHeightForWidth());
@@ -64,7 +64,7 @@ public:
         horizontalLayout->addWidget(btnLast);
 
         btnPlay = new QPushButton(btnWnd);
-        btnPlay->setObjectName(QString::fromUtf8("btnPlay"));
+        btnPlay->setObjectName("btnPlay");
         sizePolicy1.setHeightForWidth(btnPlay->sizePolicy().hasHeightForWidth());
         btnPlay->setSizePolicy(sizePolicy1);
         btnPlay->setMinimumSize(QSize(30, 30));
@@ -78,7 +78,7 @@ public:
         horizontalLayout->addWidget(btnPlay);
 
         btnNext = new QPushButton(btnWnd);
-        btnNext->setObjectName(QString::fromUtf8("btnNext"));
+        btnNext->setObjectName("btnNext");
         sizePolicy1.setHeightForWidth(btnNext->sizePolicy().hasHeightForWidth());
         btnNext->setSizePolicy(sizePolicy1);
         btnNext->setMinimumSize(QSize(30, 30));
@@ -92,7 +92,7 @@ public:
         horizontalLayout->addWidget(btnNext);
 
         horizontalSlider = new QSlider(btnWnd);
-        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
+        horizontalSlider->setObjectName("horizontalSlider");
         horizontalSlider->setStyleSheet(QString::fromUtf8(""));
         horizontalSlider->setMaximum(100);
         horizontalSlider->setPageStep(1);
@@ -101,7 +101,7 @@ public:
         horizontalLayout->addWidget(horizontalSlider);
 
         label = new QLabel(btnWnd);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName("label");
 
         horizontalLayout->addWidget(label);
 

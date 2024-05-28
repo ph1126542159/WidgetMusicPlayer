@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'OnlineCfgWnd.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,6 +10,7 @@
 #define UI_ONLINECFGWND_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
@@ -35,22 +36,22 @@ public:
     void setupUi(QDialog *OnlineCfgWnd)
     {
         if (OnlineCfgWnd->objectName().isEmpty())
-            OnlineCfgWnd->setObjectName(QString::fromUtf8("OnlineCfgWnd"));
+            OnlineCfgWnd->setObjectName("OnlineCfgWnd");
         OnlineCfgWnd->resize(656, 453);
         OnlineCfgWnd->setStyleSheet(QString::fromUtf8("font: 14pt \"\345\256\213\344\275\223\";"));
         verticalLayout = new QVBoxLayout(OnlineCfgWnd);
         verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(6, 6, 6, 6);
         groupBox = new QGroupBox(OnlineCfgWnd);
-        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setObjectName("groupBox");
         groupBox->setStyleSheet(QString::fromUtf8("font: 14pt \"\345\256\213\344\275\223\";"));
         horizontalLayout = new QHBoxLayout(groupBox);
         horizontalLayout->setSpacing(0);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         plainTextEditHeader = new QPlainTextEdit(groupBox);
-        plainTextEditHeader->setObjectName(QString::fromUtf8("plainTextEditHeader"));
+        plainTextEditHeader->setObjectName("plainTextEditHeader");
 
         horizontalLayout->addWidget(plainTextEditHeader);
 
@@ -58,14 +59,14 @@ public:
         verticalLayout->addWidget(groupBox);
 
         groupBox_2 = new QGroupBox(OnlineCfgWnd);
-        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setObjectName("groupBox_2");
         groupBox_2->setStyleSheet(QString::fromUtf8("font: 14pt \"\345\256\213\344\275\223\";"));
         verticalLayout_2 = new QVBoxLayout(groupBox_2);
         verticalLayout_2->setSpacing(0);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         plainTextEditGroup = new QPlainTextEdit(groupBox_2);
-        plainTextEditGroup->setObjectName(QString::fromUtf8("plainTextEditGroup"));
+        plainTextEditGroup->setObjectName("plainTextEditGroup");
 
         verticalLayout_2->addWidget(plainTextEditGroup);
 
@@ -73,7 +74,7 @@ public:
         verticalLayout->addWidget(groupBox_2);
 
         buttonBox = new QDialogButtonBox(OnlineCfgWnd);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName("buttonBox");
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
@@ -81,8 +82,8 @@ public:
 
 
         retranslateUi(OnlineCfgWnd);
-        QObject::connect(buttonBox, SIGNAL(accepted()), OnlineCfgWnd, SLOT(accept()));
-        QObject::connect(buttonBox, SIGNAL(rejected()), OnlineCfgWnd, SLOT(reject()));
+        QObject::connect(buttonBox, &QDialogButtonBox::accepted, OnlineCfgWnd, qOverload<>(&QDialog::accept));
+        QObject::connect(buttonBox, &QDialogButtonBox::rejected, OnlineCfgWnd, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(OnlineCfgWnd);
     } // setupUi

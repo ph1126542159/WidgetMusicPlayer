@@ -1,53 +1,55 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'downloaderCtrl.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../../downloaderCtrl.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #include <QtCore/QSharedPointer>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'downloaderCtrl.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_DownLoaderHttpThread_t {
-    QByteArrayData data[4];
-    char stringdata0[67];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_DownLoaderHttpThread_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_DownLoaderHttpThread_t qt_meta_stringdata_DownLoaderHttpThread = {
-    {
-QT_MOC_LITERAL(0, 0, 20), // "DownLoaderHttpThread"
-QT_MOC_LITERAL(1, 21, 14), // "dlowndNewMusic"
-QT_MOC_LITERAL(2, 36, 0), // ""
-QT_MOC_LITERAL(3, 37, 29) // "QSharedPointer<SoundBaseInfo>"
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
 
-    },
-    "DownLoaderHttpThread\0dlowndNewMusic\0"
-    "\0QSharedPointer<SoundBaseInfo>"
-};
-#undef QT_MOC_LITERAL
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSDownLoaderHttpThreadENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSDownLoaderHttpThreadENDCLASS = QtMocHelpers::stringData(
+    "DownLoaderHttpThread",
+    "dlowndNewMusic",
+    "",
+    "QSharedPointer<SoundBaseInfo>"
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+} // unnamed namespace
 
-static const uint qt_meta_data_DownLoaderHttpThread[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSDownLoaderHttpThreadENDCLASS[] = {
 
  // content:
-       8,       // revision
+      12,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -57,8 +59,8 @@ static const uint qt_meta_data_DownLoaderHttpThread[] = {
        0,       // flags
        1,       // signalCount
 
- // signals: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x06 /* Public */,
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   20,    2, 0x06,    1 /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    2,
@@ -66,23 +68,39 @@ static const uint qt_meta_data_DownLoaderHttpThread[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject DownLoaderHttpThread::staticMetaObject = { {
+    QMetaObject::SuperData::link<QThread::staticMetaObject>(),
+    qt_meta_stringdata_CLASSDownLoaderHttpThreadENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSDownLoaderHttpThreadENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSDownLoaderHttpThreadENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<DownLoaderHttpThread, std::true_type>,
+        // method 'dlowndNewMusic'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QSharedPointer<SoundBaseInfo>, std::false_type>
+    >,
+    nullptr
+} };
+
 void DownLoaderHttpThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<DownLoaderHttpThread *>(_o);
-        Q_UNUSED(_t)
+        (void)_t;
         switch (_id) {
-        case 0: _t->dlowndNewMusic((*reinterpret_cast< QSharedPointer<SoundBaseInfo>(*)>(_a[1]))); break;
+        case 0: _t->dlowndNewMusic((*reinterpret_cast< std::add_pointer_t<QSharedPointer<SoundBaseInfo>>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
-        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
         case 0:
             switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QSharedPointer<SoundBaseInfo> >(); break;
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QSharedPointer<SoundBaseInfo> >(); break;
             }
             break;
         }
@@ -90,23 +108,13 @@ void DownLoaderHttpThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (DownLoaderHttpThread::*)(QSharedPointer<SoundBaseInfo> );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&DownLoaderHttpThread::dlowndNewMusic)) {
+            if (_t _q_method = &DownLoaderHttpThread::dlowndNewMusic; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-QT_INIT_METAOBJECT const QMetaObject DownLoaderHttpThread::staticMetaObject = { {
-    QMetaObject::SuperData::link<QThread::staticMetaObject>(),
-    qt_meta_stringdata_DownLoaderHttpThread.data,
-    qt_meta_data_DownLoaderHttpThread,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
 
 const QMetaObject *DownLoaderHttpThread::metaObject() const
 {
@@ -116,7 +124,7 @@ const QMetaObject *DownLoaderHttpThread::metaObject() const
 void *DownLoaderHttpThread::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_DownLoaderHttpThread.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSDownLoaderHttpThreadENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QThread::qt_metacast(_clname);
 }
@@ -144,36 +152,28 @@ void DownLoaderHttpThread::dlowndNewMusic(QSharedPointer<SoundBaseInfo> _t1)
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
-struct qt_meta_stringdata_DownLoaderCtrl_t {
-    QByteArrayData data[7];
-    char stringdata0[88];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_DownLoaderCtrl_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_DownLoaderCtrl_t qt_meta_stringdata_DownLoaderCtrl = {
-    {
-QT_MOC_LITERAL(0, 0, 14), // "DownLoaderCtrl"
-QT_MOC_LITERAL(1, 15, 14), // "dlowndNewMusic"
-QT_MOC_LITERAL(2, 30, 0), // ""
-QT_MOC_LITERAL(3, 31, 29), // "QSharedPointer<SoundBaseInfo>"
-QT_MOC_LITERAL(4, 61, 10), // "addpendNew"
-QT_MOC_LITERAL(5, 72, 7), // "header1"
-QT_MOC_LITERAL(6, 80, 7) // "header2"
+namespace {
 
-    },
-    "DownLoaderCtrl\0dlowndNewMusic\0\0"
-    "QSharedPointer<SoundBaseInfo>\0addpendNew\0"
-    "header1\0header2"
-};
-#undef QT_MOC_LITERAL
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSDownLoaderCtrlENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSDownLoaderCtrlENDCLASS = QtMocHelpers::stringData(
+    "DownLoaderCtrl",
+    "dlowndNewMusic",
+    "",
+    "QSharedPointer<SoundBaseInfo>",
+    "addpendNew",
+    "header1",
+    "header2"
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+} // unnamed namespace
 
-static const uint qt_meta_data_DownLoaderCtrl[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSDownLoaderCtrlENDCLASS[] = {
 
  // content:
-       8,       // revision
+      12,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -183,11 +183,11 @@ static const uint qt_meta_data_DownLoaderCtrl[] = {
        0,       // flags
        1,       // signalCount
 
- // signals: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x06 /* Public */,
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   26,    2, 0x06,    1 /* Public */,
 
- // methods: name, argc, parameters, tag, flags
-       4,    2,   27,    2, 0x02 /* Public */,
+ // methods: name, argc, parameters, tag, flags, initial metatype offsets
+       4,    2,   29,    2, 0x02,    3 /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    2,
@@ -198,24 +198,44 @@ static const uint qt_meta_data_DownLoaderCtrl[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject DownLoaderCtrl::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_CLASSDownLoaderCtrlENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSDownLoaderCtrlENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSDownLoaderCtrlENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<DownLoaderCtrl, std::true_type>,
+        // method 'dlowndNewMusic'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QSharedPointer<SoundBaseInfo>, std::false_type>,
+        // method 'addpendNew'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+    >,
+    nullptr
+} };
+
 void DownLoaderCtrl::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<DownLoaderCtrl *>(_o);
-        Q_UNUSED(_t)
+        (void)_t;
         switch (_id) {
-        case 0: _t->dlowndNewMusic((*reinterpret_cast< QSharedPointer<SoundBaseInfo>(*)>(_a[1]))); break;
-        case 1: _t->addpendNew((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
+        case 0: _t->dlowndNewMusic((*reinterpret_cast< std::add_pointer_t<QSharedPointer<SoundBaseInfo>>>(_a[1]))); break;
+        case 1: _t->addpendNew((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
-        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
         case 0:
             switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QSharedPointer<SoundBaseInfo> >(); break;
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QSharedPointer<SoundBaseInfo> >(); break;
             }
             break;
         }
@@ -223,23 +243,13 @@ void DownLoaderCtrl::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (DownLoaderCtrl::*)(QSharedPointer<SoundBaseInfo> );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&DownLoaderCtrl::dlowndNewMusic)) {
+            if (_t _q_method = &DownLoaderCtrl::dlowndNewMusic; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-QT_INIT_METAOBJECT const QMetaObject DownLoaderCtrl::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_DownLoaderCtrl.data,
-    qt_meta_data_DownLoaderCtrl,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
 
 const QMetaObject *DownLoaderCtrl::metaObject() const
 {
@@ -249,7 +259,7 @@ const QMetaObject *DownLoaderCtrl::metaObject() const
 void *DownLoaderCtrl::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_DownLoaderCtrl.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSDownLoaderCtrlENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
@@ -278,4 +288,3 @@ void DownLoaderCtrl::dlowndNewMusic(QSharedPointer<SoundBaseInfo> _t1)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

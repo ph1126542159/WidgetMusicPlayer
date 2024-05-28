@@ -1,67 +1,64 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'QtAdvancedStylesheet.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../../QtAdvancedStylesheet.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'QtAdvancedStylesheet.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_acss__QtAdvancedStylesheet_t {
-    QByteArrayData data[14];
-    char stringdata0[233];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_acss__QtAdvancedStylesheet_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_acss__QtAdvancedStylesheet_t qt_meta_stringdata_acss__QtAdvancedStylesheet = {
-    {
-QT_MOC_LITERAL(0, 0, 26), // "acss::QtAdvancedStylesheet"
-QT_MOC_LITERAL(1, 27, 19), // "currentStyleChanged"
-QT_MOC_LITERAL(2, 47, 0), // ""
-QT_MOC_LITERAL(3, 48, 5), // "Style"
-QT_MOC_LITERAL(4, 54, 19), // "currentThemeChanged"
-QT_MOC_LITERAL(5, 74, 5), // "Theme"
-QT_MOC_LITERAL(6, 80, 17), // "stylesheetChanged"
-QT_MOC_LITERAL(7, 98, 15), // "setCurrentTheme"
-QT_MOC_LITERAL(8, 114, 15), // "setDefaultTheme"
-QT_MOC_LITERAL(9, 130, 15), // "setCurrentStyle"
-QT_MOC_LITERAL(10, 146, 16), // "updateStylesheet"
-QT_MOC_LITERAL(11, 163, 20), // "processStyleTemplate"
-QT_MOC_LITERAL(12, 184, 17), // "generateResources"
-QT_MOC_LITERAL(13, 202, 30) // "updateApplicationPaletteColors"
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
 
-    },
-    "acss::QtAdvancedStylesheet\0"
-    "currentStyleChanged\0\0Style\0"
-    "currentThemeChanged\0Theme\0stylesheetChanged\0"
-    "setCurrentTheme\0setDefaultTheme\0"
-    "setCurrentStyle\0updateStylesheet\0"
-    "processStyleTemplate\0generateResources\0"
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS = QtMocHelpers::stringData(
+    "acss::QtAdvancedStylesheet",
+    "currentStyleChanged",
+    "",
+    "Style",
+    "currentThemeChanged",
+    "Theme",
+    "stylesheetChanged",
+    "setCurrentTheme",
+    "setDefaultTheme",
+    "setCurrentStyle",
+    "updateStylesheet",
+    "processStyleTemplate",
+    "generateResources",
     "updateApplicationPaletteColors"
-};
-#undef QT_MOC_LITERAL
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+} // unnamed namespace
 
-static const uint qt_meta_data_acss__QtAdvancedStylesheet[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS[] = {
 
  // content:
-       8,       // revision
+      12,       // revision
        0,       // classname
        0,    0, // classinfo
       10,   14, // methods
@@ -71,19 +68,19 @@ static const uint qt_meta_data_acss__QtAdvancedStylesheet[] = {
        0,       // flags
        3,       // signalCount
 
- // signals: name, argc, parameters, tag, flags
-       1,    1,   64,    2, 0x06 /* Public */,
-       4,    1,   67,    2, 0x06 /* Public */,
-       6,    0,   70,    2, 0x06 /* Public */,
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   74,    2, 0x06,    1 /* Public */,
+       4,    1,   77,    2, 0x06,    3 /* Public */,
+       6,    0,   80,    2, 0x06,    5 /* Public */,
 
- // slots: name, argc, parameters, tag, flags
-       7,    1,   71,    2, 0x0a /* Public */,
-       8,    0,   74,    2, 0x0a /* Public */,
-       9,    1,   75,    2, 0x0a /* Public */,
-      10,    0,   78,    2, 0x0a /* Public */,
-      11,    0,   79,    2, 0x0a /* Public */,
-      12,    0,   80,    2, 0x0a /* Public */,
-      13,    0,   81,    2, 0x0a /* Public */,
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       7,    1,   81,    2, 0x0a,    6 /* Public */,
+       8,    0,   84,    2, 0x0a,    8 /* Public */,
+       9,    1,   85,    2, 0x0a,    9 /* Public */,
+      10,    0,   88,    2, 0x0a,   11 /* Public */,
+      11,    0,   89,    2, 0x0a,   12 /* Public */,
+      12,    0,   90,    2, 0x0a,   13 /* Public */,
+      13,    0,   91,    2, 0x0a,   14 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    3,
@@ -102,19 +99,56 @@ static const uint qt_meta_data_acss__QtAdvancedStylesheet[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject acss::QtAdvancedStylesheet::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<QtAdvancedStylesheet, std::true_type>,
+        // method 'currentStyleChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'currentThemeChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'stylesheetChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setCurrentTheme'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setDefaultTheme'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setCurrentStyle'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'updateStylesheet'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'processStyleTemplate'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'generateResources'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'updateApplicationPaletteColors'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
+    nullptr
+} };
+
 void acss::QtAdvancedStylesheet::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<QtAdvancedStylesheet *>(_o);
-        Q_UNUSED(_t)
+        (void)_t;
         switch (_id) {
-        case 0: _t->currentStyleChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 1: _t->currentThemeChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: _t->currentStyleChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->currentThemeChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->stylesheetChanged(); break;
-        case 3: { bool _r = _t->setCurrentTheme((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 3: { bool _r = _t->setCurrentTheme((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 4: _t->setDefaultTheme(); break;
-        case 5: { bool _r = _t->setCurrentStyle((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 5: { bool _r = _t->setCurrentStyle((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 6: { bool _r = _t->updateStylesheet();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
@@ -129,37 +163,27 @@ void acss::QtAdvancedStylesheet::qt_static_metacall(QObject *_o, QMetaObject::Ca
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (QtAdvancedStylesheet::*)(const QString & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QtAdvancedStylesheet::currentStyleChanged)) {
+            if (_t _q_method = &QtAdvancedStylesheet::currentStyleChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
             using _t = void (QtAdvancedStylesheet::*)(const QString & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QtAdvancedStylesheet::currentThemeChanged)) {
+            if (_t _q_method = &QtAdvancedStylesheet::currentThemeChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (QtAdvancedStylesheet::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&QtAdvancedStylesheet::stylesheetChanged)) {
+            if (_t _q_method = &QtAdvancedStylesheet::stylesheetChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
     }
 }
-
-QT_INIT_METAOBJECT const QMetaObject acss::QtAdvancedStylesheet::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_acss__QtAdvancedStylesheet.data,
-    qt_meta_data_acss__QtAdvancedStylesheet,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
 
 const QMetaObject *acss::QtAdvancedStylesheet::metaObject() const
 {
@@ -169,7 +193,7 @@ const QMetaObject *acss::QtAdvancedStylesheet::metaObject() const
 void *acss::QtAdvancedStylesheet::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_acss__QtAdvancedStylesheet.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSacssSCOPEQtAdvancedStylesheetENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
@@ -185,7 +209,7 @@ int acss::QtAdvancedStylesheet::qt_metacall(QMetaObject::Call _c, int _id, void 
         _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 10)
-            *reinterpret_cast<int*>(_a[0]) = -1;
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 10;
     }
     return _id;
@@ -211,4 +235,3 @@ void acss::QtAdvancedStylesheet::stylesheetChanged()
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

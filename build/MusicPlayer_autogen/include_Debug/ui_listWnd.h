@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'listWnd.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -45,22 +45,22 @@ public:
     void setupUi(QWidget *listWnd)
     {
         if (listWnd->objectName().isEmpty())
-            listWnd->setObjectName(QString::fromUtf8("listWnd"));
+            listWnd->setObjectName("listWnd");
         listWnd->resize(304, 811);
         listWnd->setStyleSheet(QString::fromUtf8(""));
         verticalLayout = new QVBoxLayout(listWnd);
         verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
 
         btnOnlie = new QPushButton(listWnd);
-        btnOnlie->setObjectName(QString::fromUtf8("btnOnlie"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        btnOnlie->setObjectName("btnOnlie");
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(btnOnlie->sizePolicy().hasHeightForWidth());
@@ -76,7 +76,7 @@ public:
         horizontalLayout->addWidget(btnOnlie);
 
         selectLoaclFile = new QPushButton(listWnd);
-        selectLoaclFile->setObjectName(QString::fromUtf8("selectLoaclFile"));
+        selectLoaclFile->setObjectName("selectLoaclFile");
         sizePolicy.setHeightForWidth(selectLoaclFile->sizePolicy().hasHeightForWidth());
         selectLoaclFile->setSizePolicy(sizePolicy);
         selectLoaclFile->setMinimumSize(QSize(32, 32));
@@ -93,7 +93,7 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         tableView = new QTableView(listWnd);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
+        tableView->setObjectName("tableView");
         tableView->setStyleSheet(QString::fromUtf8("QTableView{\n"
 "	background-color: transparent;\n"
 "	border:none;\n"
@@ -102,16 +102,16 @@ public:
         verticalLayout->addWidget(tableView);
 
         line = new QFrame(listWnd);
-        line->setObjectName(QString::fromUtf8("line"));
-        line->setFrameShape(QFrame::HLine);
-        line->setFrameShadow(QFrame::Sunken);
+        line->setObjectName("line");
+        line->setFrameShape(QFrame::Shape::HLine);
+        line->setFrameShadow(QFrame::Shadow::Sunken);
 
         verticalLayout->addWidget(line);
 
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
         btnDanqu = new QPushButton(listWnd);
-        btnDanqu->setObjectName(QString::fromUtf8("btnDanqu"));
+        btnDanqu->setObjectName("btnDanqu");
         sizePolicy.setHeightForWidth(btnDanqu->sizePolicy().hasHeightForWidth());
         btnDanqu->setSizePolicy(sizePolicy);
         btnDanqu->setMinimumSize(QSize(32, 32));
@@ -126,7 +126,7 @@ public:
         horizontalLayout_2->addWidget(btnDanqu);
 
         btnXunhuan = new QPushButton(listWnd);
-        btnXunhuan->setObjectName(QString::fromUtf8("btnXunhuan"));
+        btnXunhuan->setObjectName("btnXunhuan");
         sizePolicy.setHeightForWidth(btnXunhuan->sizePolicy().hasHeightForWidth());
         btnXunhuan->setSizePolicy(sizePolicy);
         btnXunhuan->setMinimumSize(QSize(32, 32));
@@ -142,7 +142,7 @@ public:
         horizontalLayout_2->addWidget(btnXunhuan);
 
         btnRande = new QPushButton(listWnd);
-        btnRande->setObjectName(QString::fromUtf8("btnRande"));
+        btnRande->setObjectName("btnRande");
         sizePolicy.setHeightForWidth(btnRande->sizePolicy().hasHeightForWidth());
         btnRande->setSizePolicy(sizePolicy);
         btnRande->setMinimumSize(QSize(32, 32));
@@ -160,10 +160,10 @@ public:
         verticalLayout->addLayout(horizontalLayout_2);
 
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
         horizontalLayout_3->setContentsMargins(6, -1, 6, -1);
         vloumeBtn = new QPushButton(listWnd);
-        vloumeBtn->setObjectName(QString::fromUtf8("vloumeBtn"));
+        vloumeBtn->setObjectName("vloumeBtn");
         sizePolicy.setHeightForWidth(vloumeBtn->sizePolicy().hasHeightForWidth());
         vloumeBtn->setSizePolicy(sizePolicy);
         vloumeBtn->setMinimumSize(QSize(32, 32));
@@ -177,7 +177,7 @@ public:
         horizontalLayout_3->addWidget(vloumeBtn);
 
         horizontalSlider = new QSlider(listWnd);
-        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
+        horizontalSlider->setObjectName("horizontalSlider");
         horizontalSlider->setStyleSheet(QString::fromUtf8(""));
         horizontalSlider->setMaximum(100);
         horizontalSlider->setValue(50);

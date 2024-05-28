@@ -1,63 +1,63 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'listWnd.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../../listWnd.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #include <QtCore/QSharedPointer>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'listWnd.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_listWnd_t {
-    QByteArrayData data[12];
-    char stringdata0[160];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_listWnd_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_listWnd_t qt_meta_stringdata_listWnd = {
-    {
-QT_MOC_LITERAL(0, 0, 7), // "listWnd"
-QT_MOC_LITERAL(1, 8, 9), // "playSound"
-QT_MOC_LITERAL(2, 18, 0), // ""
-QT_MOC_LITERAL(3, 19, 30), // "QSharedPointer<SoundBaseInfo>&"
-QT_MOC_LITERAL(4, 50, 3), // "ptr"
-QT_MOC_LITERAL(5, 54, 17), // "soundValueChanged"
-QT_MOC_LITERAL(6, 72, 19), // "autoPlayTypeChanged"
-QT_MOC_LITERAL(7, 92, 8), // "playLast"
-QT_MOC_LITERAL(8, 101, 8), // "playNext"
-QT_MOC_LITERAL(9, 110, 9), // "playRande"
-QT_MOC_LITERAL(10, 120, 9), // "appendNew"
-QT_MOC_LITERAL(11, 130, 29) // "QSharedPointer<SoundBaseInfo>"
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
 
-    },
-    "listWnd\0playSound\0\0QSharedPointer<SoundBaseInfo>&\0"
-    "ptr\0soundValueChanged\0autoPlayTypeChanged\0"
-    "playLast\0playNext\0playRande\0appendNew\0"
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSlistWndENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSlistWndENDCLASS = QtMocHelpers::stringData(
+    "listWnd",
+    "playSound",
+    "",
+    "QSharedPointer<SoundBaseInfo>&",
+    "ptr",
+    "soundValueChanged",
+    "autoPlayTypeChanged",
+    "playLast",
+    "playNext",
+    "playRande",
+    "appendNew",
     "QSharedPointer<SoundBaseInfo>"
-};
-#undef QT_MOC_LITERAL
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+} // unnamed namespace
 
-static const uint qt_meta_data_listWnd[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSlistWndENDCLASS[] = {
 
  // content:
-       8,       // revision
+      12,       // revision
        0,       // classname
        0,    0, // classinfo
        7,   14, // methods
@@ -67,16 +67,16 @@ static const uint qt_meta_data_listWnd[] = {
        0,       // flags
        3,       // signalCount
 
- // signals: name, argc, parameters, tag, flags
-       1,    1,   49,    2, 0x06 /* Public */,
-       5,    1,   52,    2, 0x06 /* Public */,
-       6,    1,   55,    2, 0x06 /* Public */,
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   56,    2, 0x06,    1 /* Public */,
+       5,    1,   59,    2, 0x06,    3 /* Public */,
+       6,    1,   62,    2, 0x06,    5 /* Public */,
 
- // slots: name, argc, parameters, tag, flags
-       7,    0,   58,    2, 0x0a /* Public */,
-       8,    0,   59,    2, 0x0a /* Public */,
-       9,    0,   60,    2, 0x0a /* Public */,
-      10,    1,   61,    2, 0x0a /* Public */,
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       7,    0,   65,    2, 0x0a,    7 /* Public */,
+       8,    0,   66,    2, 0x0a,    8 /* Public */,
+       9,    0,   67,    2, 0x0a,    9 /* Public */,
+      10,    1,   68,    2, 0x0a,   10 /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -92,29 +92,60 @@ static const uint qt_meta_data_listWnd[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject listWnd::staticMetaObject = { {
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    qt_meta_stringdata_CLASSlistWndENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSlistWndENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSlistWndENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<listWnd, std::true_type>,
+        // method 'playSound'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QSharedPointer<SoundBaseInfo> &, std::false_type>,
+        // method 'soundValueChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'autoPlayTypeChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'playLast'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'playNext'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'playRande'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'appendNew'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QSharedPointer<SoundBaseInfo>, std::false_type>
+    >,
+    nullptr
+} };
+
 void listWnd::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<listWnd *>(_o);
-        Q_UNUSED(_t)
+        (void)_t;
         switch (_id) {
-        case 0: _t->playSound((*reinterpret_cast< QSharedPointer<SoundBaseInfo>(*)>(_a[1]))); break;
-        case 1: _t->soundValueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 2: _t->autoPlayTypeChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->playSound((*reinterpret_cast< std::add_pointer_t<QSharedPointer<SoundBaseInfo>&>>(_a[1]))); break;
+        case 1: _t->soundValueChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->autoPlayTypeChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 3: _t->playLast(); break;
         case 4: _t->playNext(); break;
         case 5: _t->playRande(); break;
-        case 6: _t->appendNew((*reinterpret_cast< QSharedPointer<SoundBaseInfo>(*)>(_a[1]))); break;
+        case 6: _t->appendNew((*reinterpret_cast< std::add_pointer_t<QSharedPointer<SoundBaseInfo>>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
-        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
         case 6:
             switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QSharedPointer<SoundBaseInfo> >(); break;
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QSharedPointer<SoundBaseInfo> >(); break;
             }
             break;
         }
@@ -122,37 +153,27 @@ void listWnd::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (listWnd::*)(QSharedPointer<SoundBaseInfo> & );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&listWnd::playSound)) {
+            if (_t _q_method = &listWnd::playSound; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
             using _t = void (listWnd::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&listWnd::soundValueChanged)) {
+            if (_t _q_method = &listWnd::soundValueChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (listWnd::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&listWnd::autoPlayTypeChanged)) {
+            if (_t _q_method = &listWnd::autoPlayTypeChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
     }
 }
-
-QT_INIT_METAOBJECT const QMetaObject listWnd::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_listWnd.data,
-    qt_meta_data_listWnd,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
 
 const QMetaObject *listWnd::metaObject() const
 {
@@ -162,7 +183,7 @@ const QMetaObject *listWnd::metaObject() const
 void *listWnd::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_listWnd.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSlistWndENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
@@ -205,4 +226,3 @@ void listWnd::autoPlayTypeChanged(int _t1)
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

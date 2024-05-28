@@ -1,55 +1,57 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'imgWnd.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../../imgWnd.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'imgWnd.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_imgWnd_t {
-    QByteArrayData data[7];
-    char stringdata0[63];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_imgWnd_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_imgWnd_t qt_meta_stringdata_imgWnd = {
-    {
-QT_MOC_LITERAL(0, 0, 6), // "imgWnd"
-QT_MOC_LITERAL(1, 7, 11), // "updateAngle"
-QT_MOC_LITERAL(2, 19, 0), // ""
-QT_MOC_LITERAL(3, 20, 14), // "playingChanged"
-QT_MOC_LITERAL(4, 35, 9), // "isPlaying"
-QT_MOC_LITERAL(5, 45, 12), // "reLoadPixmap"
-QT_MOC_LITERAL(6, 58, 4) // "path"
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
 
-    },
-    "imgWnd\0updateAngle\0\0playingChanged\0"
-    "isPlaying\0reLoadPixmap\0path"
-};
-#undef QT_MOC_LITERAL
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSimgWndENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSimgWndENDCLASS = QtMocHelpers::stringData(
+    "imgWnd",
+    "updateAngle",
+    "",
+    "playingChanged",
+    "isPlaying",
+    "reLoadPixmap",
+    "path"
+);
+#else  // !QT_MOC_HAS_STRINGDATA
+#error "qtmochelpers.h not found or too old."
+#endif // !QT_MOC_HAS_STRINGDATA
+} // unnamed namespace
 
-static const uint qt_meta_data_imgWnd[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSimgWndENDCLASS[] = {
 
  // content:
-       8,       // revision
+      12,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -59,10 +61,10 @@ static const uint qt_meta_data_imgWnd[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    0,   29,    2, 0x0a /* Public */,
-       3,    1,   30,    2, 0x0a /* Public */,
-       5,    1,   33,    2, 0x0a /* Public */,
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   32,    2, 0x0a,    1 /* Public */,
+       3,    1,   33,    2, 0x0a,    2 /* Public */,
+       5,    1,   36,    2, 0x0a,    4 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -72,29 +74,40 @@ static const uint qt_meta_data_imgWnd[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject imgWnd::staticMetaObject = { {
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    qt_meta_stringdata_CLASSimgWndENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSimgWndENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSimgWndENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<imgWnd, std::true_type>,
+        // method 'updateAngle'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'playingChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'reLoadPixmap'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+    >,
+    nullptr
+} };
+
 void imgWnd::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<imgWnd *>(_o);
-        Q_UNUSED(_t)
+        (void)_t;
         switch (_id) {
         case 0: _t->updateAngle(); break;
-        case 1: _t->playingChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 2: _t->reLoadPixmap((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->playingChanged((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 2: _t->reLoadPixmap((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
 }
-
-QT_INIT_METAOBJECT const QMetaObject imgWnd::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_imgWnd.data,
-    qt_meta_data_imgWnd,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
 
 const QMetaObject *imgWnd::metaObject() const
 {
@@ -104,7 +117,7 @@ const QMetaObject *imgWnd::metaObject() const
 void *imgWnd::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_imgWnd.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSimgWndENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
@@ -120,10 +133,9 @@ int imgWnd::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 3)
-            *reinterpret_cast<int*>(_a[0]) = -1;
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 3;
     }
     return _id;
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

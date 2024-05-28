@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'MainWindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -40,45 +40,45 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+            MainWindow->setObjectName("MainWindow");
         MainWindow->resize(1125, 658);
         centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setSpacing(0);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(0);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         imageWnd = new imgWnd(centralwidget);
-        imageWnd->setObjectName(QString::fromUtf8("imageWnd"));
+        imageWnd->setObjectName("imageWnd");
 
         horizontalLayout->addWidget(imageWnd);
 
         line = new QFrame(centralwidget);
-        line->setObjectName(QString::fromUtf8("line"));
-        line->setFrameShape(QFrame::VLine);
-        line->setFrameShadow(QFrame::Sunken);
+        line->setObjectName("line");
+        line->setFrameShape(QFrame::Shape::VLine);
+        line->setFrameShadow(QFrame::Shadow::Sunken);
 
         horizontalLayout->addWidget(line);
 
         geciWndObj = new geciWnd(centralwidget);
-        geciWndObj->setObjectName(QString::fromUtf8("geciWndObj"));
+        geciWndObj->setObjectName("geciWndObj");
         geciWndObj->setMinimumSize(QSize(200, 0));
 
         horizontalLayout->addWidget(geciWndObj);
 
         line_2 = new QFrame(centralwidget);
-        line_2->setObjectName(QString::fromUtf8("line_2"));
-        line_2->setFrameShape(QFrame::VLine);
-        line_2->setFrameShadow(QFrame::Sunken);
+        line_2->setObjectName("line_2");
+        line_2->setFrameShape(QFrame::Shape::VLine);
+        line_2->setFrameShadow(QFrame::Shadow::Sunken);
 
         horizontalLayout->addWidget(line_2);
 
         listWndObj = new listWnd(centralwidget);
-        listWndObj->setObjectName(QString::fromUtf8("listWndObj"));
+        listWndObj->setObjectName("listWndObj");
         listWndObj->setMinimumSize(QSize(280, 0));
 
         horizontalLayout->addWidget(listWndObj);
@@ -90,15 +90,15 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         line_3 = new QFrame(centralwidget);
-        line_3->setObjectName(QString::fromUtf8("line_3"));
-        line_3->setFrameShape(QFrame::HLine);
-        line_3->setFrameShadow(QFrame::Sunken);
+        line_3->setObjectName("line_3");
+        line_3->setFrameShape(QFrame::Shape::HLine);
+        line_3->setFrameShadow(QFrame::Shadow::Sunken);
 
         verticalLayout->addWidget(line_3);
 
         btnWndObj = new btnWnd(centralwidget);
-        btnWndObj->setObjectName(QString::fromUtf8("btnWndObj"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        btnWndObj->setObjectName("btnWndObj");
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(btnWndObj->sizePolicy().hasHeightForWidth());

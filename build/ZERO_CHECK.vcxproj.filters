@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\CMakeFiles\d624d5d015c3f1573591cf2680638517\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\ph\Desktop\WidgetMusicPlayer\build\CMakeFiles\6c3f89e832a0d0b76123907956038f28\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{45A34199-90D7-36B7-B74A-08E68FF59A67}</UniqueIdentifier>
+      <UniqueIdentifier>{DBEBA80A-CAA9-3843-A454-EEBB9A944E53}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

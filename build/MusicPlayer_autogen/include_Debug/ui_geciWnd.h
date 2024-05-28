@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'geciWnd.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.2
+** Created by: Qt User Interface Compiler version 6.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,15 +26,15 @@ public:
     void setupUi(QWidget *geciWnd)
     {
         if (geciWnd->objectName().isEmpty())
-            geciWnd->setObjectName(QString::fromUtf8("geciWnd"));
+            geciWnd->setObjectName("geciWnd");
         geciWnd->resize(643, 626);
         geciWnd->setStyleSheet(QString::fromUtf8(""));
         verticalLayout = new QVBoxLayout(geciWnd);
         verticalLayout->setSpacing(0);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 100, 0, 100);
         listView = new QListView(geciWnd);
-        listView->setObjectName(QString::fromUtf8("listView"));
+        listView->setObjectName("listView");
         listView->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "border:none;"));
 
