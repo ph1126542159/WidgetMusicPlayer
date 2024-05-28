@@ -79,7 +79,7 @@ public:
 
         listWndObj = new listWnd(centralwidget);
         listWndObj->setObjectName(QString::fromUtf8("listWndObj"));
-        listWndObj->setMinimumSize(QSize(200, 0));
+        listWndObj->setMinimumSize(QSize(280, 0));
 
         horizontalLayout->addWidget(listWndObj);
 

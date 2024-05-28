@@ -13,5 +13,6 @@
         <file>images/next.svg</file>
         <file>images/pause.svg</file>
         <file>images/play.svg</file>
+        <file>images/delete.svg</file>
     </qresource>
 </RCC>
