@@ -69,7 +69,7 @@ public:
             painter->setPen(Qt::black);
 
         QFont font = painter->font();
-        font.setPointSize(14); // 设置字体大小为 16 像素
+        font.setPointSize(12); // 设置字体大小为 16 像素
         font.setFamily(QStringLiteral("微软雅黑")); // 设置字体为微软雅黑
         painter->setFont(font);
 
