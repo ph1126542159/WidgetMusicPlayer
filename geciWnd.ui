@@ -14,8 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:transparent;
-</string>
+   <string notr="true"/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -36,7 +35,8 @@
    <item>
     <widget class="QListView" name="listView">
      <property name="styleSheet">
-      <string notr="true">border: none; </string>
+      <string notr="true">background-color: transparent;
+border:none;</string>
      </property>
     </widget>
    </item>

@@ -128,21 +128,9 @@
    <item>
     <widget class="QTableView" name="tableView">
      <property name="styleSheet">
-      <string notr="true">QTableView {
-background-color:&quot;#7fb80e&quot;;
-border: none; 
-font-size: 14px;
-}
-QHeaderView::section {
-	background-color: lightgray;
-   border: none; 
-  	 color: black;
-   padding: 2px;
-   border: 1px solid gray;font-size: 16px;
-}
-
-QTableView::verticalHeader {
-        display: none;
+      <string notr="true">QTableView{
+	background-color: transparent;
+	border:none;
 }</string>
      </property>
     </widget>
@@ -327,35 +315,7 @@ QTableView::verticalHeader {
      <item>
       <widget class="QSlider" name="horizontalSlider">
        <property name="styleSheet">
-        <string notr="true">QSlider::groove:horizontal {
-    border: 1px solid  rgb(200, 200, 200);
-    height: 6px;
-    border-radius: 1px;
-    padding: -1px;
-}
- 
-QSlider::sub-page:horizontal {
-    background: rgb(200, 200, 200);
-    border: 1px solid  rgb(200, 200, 200);
-    border-radius: 2px;
-}
- 
-QSlider::add-page:horizontal {
-    background: rgb(200, 200, 200);
-    border: 1px solid  rgb(200, 200, 200);
-    border-radius: 2px;
-}
- 
-QSlider::handle:horizontal {
-    background:  rgb(69, 173, 237);
-    width: 20px;
-    margin-top: -7px;
-    margin-bottom: -7px;
-    border-radius: 10px;
-}
-QSlider::sub-page:horizontal{
-background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #439cf3, stop:0.25 #439cf3, stop:0.5 #439cf3, stop:1 #439cf3);
-}</string>
+        <string notr="true"/>
        </property>
        <property name="maximum">
         <number>100</number>

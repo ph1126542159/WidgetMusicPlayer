@@ -20,8 +20,14 @@ listWnd::listWnd(QWidget *parent) :
 
     ui-> tableView->setModel(_ptrModel);
     ui-> tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
     ui-> tableView->horizontalHeader()->setDefaultAlignment(Qt::AlignCenter);
     ui-> tableView->verticalHeader()->setVisible(false);
+    ui-> tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui->tableView->setShowGrid(false);
+    ui->tableView->setEditTriggers(QTableView::NoEditTriggers);
+
+
 
     QObject::connect(_ptrModel,&QStandardItemModel::rowsInserted,[=](){
         if(_ptrModel->rowCount()==1){
@@ -141,8 +147,8 @@ void listWnd::playRande()
 
 
 
-void listWnd::paintEvent(QPaintEvent *event)
+void listWnd::paintEvent(QPaintEvent *)
 {
-    QPainter painter(this);
-    painter.fillRect(rect(), QColor("#7fb80e"));
+    // QPainter painter(this);
+    // painter.fillRect(rect(), QColor("#7fb80e"));
 }

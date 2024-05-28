@@ -34,7 +34,7 @@ void imgWnd::reLoadPixmap(const QString& path)
 void imgWnd::paintEvent(QPaintEvent* event)
 {
     QPainter painter(this);
-    painter.setRenderHint(QPainter::HighQualityAntialiasing);
+    painter.setRenderHint(QPainter::Antialiasing);
     // 计算圆形区域的中心点和半径
     QPoint center(width() / 2, height() / 2);
     int radius = qMin(width(), height()) / 4;

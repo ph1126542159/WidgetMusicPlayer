@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\btnWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\geciWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\imgWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\listWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\downloaderCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\OnlineCfgWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\QtAdvancedStylesheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\EWIEGA46WW\qrc_images.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\btnWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\geciWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\imgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\listWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\DataItemDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\downloaderCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\OnlineCfgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\acss_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\QtAdvancedStylesheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_btnWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_geciWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_imgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_listWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Debug\ui_OnlineCfgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_btnWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_geciWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_imgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_listWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_Release\ui_OnlineCfgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_btnWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_geciWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_imgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_listWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_MinSizeRel\ui_OnlineCfgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_btnWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_geciWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_imgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_listWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\include_RelWithDebInfo\ui_OnlineCfgWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\CMakeFiles\5208d7874210ac5f4ee40c4876d7785c\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\CMakeFiles\47970a33d493aca0f463ceb97de2cfda\qrc_images.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\18915\Desktop\WidgetMusicPlayer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\MainWindow.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\btnWnd.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\geciWnd.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\images.qrc" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\imgWnd.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\listWnd.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\OnlineCfgWnd.ui" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\18915\Desktop\WidgetMusicPlayer\build\MusicPlayer_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45A34199-90D7-36B7-B74A-08E68FF59A67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{74122BDB-D5CB-345D-8B28-6E219C05A738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B2EA79E1-DFCC-3654-85E3-FABD8954BFE8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

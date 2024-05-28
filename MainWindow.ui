@@ -14,7 +14,7 @@
    <string>音乐播放器</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="5,0,1">
     <property name="spacing">
      <number>0</number>
     </property>
@@ -28,10 +28,10 @@
      <number>0</number>
     </property>
     <property name="bottomMargin">
-     <number>12</number>
+     <number>0</number>
     </property>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,4,1">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,4,0,1">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -58,12 +58,40 @@
        </widget>
       </item>
       <item>
-       <widget class="geciWnd" name="geciWndObj" native="true"/>
+       <widget class="geciWnd" name="geciWndObj" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="listWnd" name="listWndObj" native="true"/>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="listWnd" name="listWndObj" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
      </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="btnWnd" name="btnWndObj" native="true">
@@ -76,13 +104,13 @@
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>60</height>
+        <height>50</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>60</height>
+        <height>50</height>
        </size>
       </property>
      </widget>

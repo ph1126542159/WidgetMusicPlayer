@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Multimedia Network)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia Network)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Multimedia Network Svg)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia Network Svg)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -44,11 +44,12 @@ else()
             DataItemDef.h
             downloaderCtrl.cpp downloaderCtrl.h
             OnlineCfgWnd.h OnlineCfgWnd.cpp OnlineCfgWnd.ui
+            acss_globals.h   QtAdvancedStylesheet.cpp QtAdvancedStylesheet.h
         )
     endif()
 endif()
 
-target_link_libraries(MusicPlayer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Multimedia Qt${QT_VERSION_MAJOR}::Network)
+target_link_libraries(MusicPlayer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Multimedia Qt${QT_VERSION_MAJOR}::Network Qt${QT_VERSION_MAJOR}::Svg)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -74,3 +75,13 @@ install(TARGETS MusicPlayer
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(MusicPlayer)
 endif()
+
+if(MSVC)
+    add_compile_options(/wd4996)
+endif()
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)

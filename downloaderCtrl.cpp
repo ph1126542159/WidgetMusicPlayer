@@ -134,7 +134,7 @@ void DownLoaderHttpThread::run()
             ptrData->author=obj["albumName"].toString();
             ptrData->name=obj["musicName"].toString();
             ptrData->totalNum=obj["duration"].toInt()*1000;
-            ptrData->timesetr=btnWnd::millisecondsToString( ptrData->totalNum*1000);
+            ptrData->timesetr=btnWnd::millisecondsToString( ptrData->totalNum);
 
             QString dirPath="./temp"+obj["path"].toString();
             QDir dir;

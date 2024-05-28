@@ -1,4 +1,4 @@
-#include "geciWnd.h"
+﻿#include "geciWnd.h"
 #include "ui_geciWnd.h"
 #include <QStyledItemDelegate>
 #include <QPainter>
@@ -69,7 +69,7 @@ public:
             painter->setPen(Qt::black);
 
         QFont font = painter->font();
-        font.setPointSize(16); // 设置字体大小为 16 像素
+        font.setPointSize(14); // 设置字体大小为 16 像素
         painter->setFont(font);
 
         painter->save();
