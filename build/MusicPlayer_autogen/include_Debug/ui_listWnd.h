@@ -161,6 +161,7 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(6, -1, 6, -1);
         vloumeBtn = new QPushButton(listWnd);
         vloumeBtn->setObjectName(QString::fromUtf8("vloumeBtn"));
         sizePolicy.setHeightForWidth(vloumeBtn->sizePolicy().hasHeightForWidth());
