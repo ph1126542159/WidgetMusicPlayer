@@ -129,6 +129,7 @@ void listWnd::appendNew(QSharedPointer<SoundBaseInfo> ptrData)
     items.append(third);
 
     auto fourth = new QStandardItem();
+    fourth->setText(QStringLiteral("  "));
     fourth->setIcon(QIcon(":/images/delete.svg"));
     items.append(fourth);
     _ptrModel->appendRow(items);
