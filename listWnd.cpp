@@ -12,6 +12,16 @@ listWnd::listWnd(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->btnOnlie->setToolTip(QStringLiteral("在线音乐"));
+    ui->btnDanqu->setToolTip(QStringLiteral("顺序播放"));
+    ui->btnRande->setToolTip(QStringLiteral("随机播放"));
+    ui->btnXunhuan->setToolTip(QStringLiteral("循环播放"));
+    ui->vloumeBtn->setToolTip(QStringLiteral("音量"));
+    ui->selectLoaclFile->setToolTip(QStringLiteral("选择本地音乐"));
+
+    _isNoSound=false;
+    _currRow=0;
+
     _ptrModel=new QStandardItemModel(0,3,this);
     // 设置表头
     _ptrModel->setHeaderData(0, Qt::Horizontal, QStringLiteral("名称"));
